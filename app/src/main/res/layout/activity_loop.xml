@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/tv_value1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+    <com.demo.board.LoopScaleView
+        android:id="@+id/lsv_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/loopscaleview_bg"
+        android:padding="8dp"
+        app:cursorMap="@mipmap/ic_launcher"
+        app:maxShowItem="6" />
+
+    <TextView
+        android:id="@+id/tv_value2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+    <com.demo.board.LoopScaleView
+        android:id="@+id/lsv_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/loopscaleview_bg"
+        android:padding="8dp"
+        app:cursorColor="@color/colorPrimary"
+        app:maxShowItem="6" />
+
+    <TextView
+        android:id="@+id/tv_value3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+    <com.demo.board.LoopScaleView
+        android:id="@+id/lsv_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/loopscaleview_bg"
+        android:padding="8dp"
+        app:cursorColor="@color/colorAccent"
+        app:maxShowItem="6"
+        app:maxValue="100"
+        app:scaleTextColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_value4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+    <com.demo.board.LoopScaleView
+        android:id="@+id/lsv_4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/loopscaleview_bg"
+        android:padding="8dp"
+        app:cursorColor="@color/colorAccent"
+        app:maxShowItem="4"
+        app:maxValue="1000"
+        app:oneItemValue="5"
+        app:scaleTextColor="@color/colorPrimary" />
+</LinearLayout>
